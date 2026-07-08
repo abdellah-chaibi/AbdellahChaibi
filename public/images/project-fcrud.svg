@@ -1,0 +1,76 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#060911"/>
+  <radialGradient id="heroGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 170) rotate(35) scale(640 420)">
+    <stop stop-color="#1d2c3b"/>
+    <stop offset="0.45" stop-color="#0d1520"/>
+    <stop offset="1" stop-color="#060911"/>
+  </radialGradient>
+  <rect width="1600" height="900" fill="url(#heroGlow)"/>
+  <linearGradient id="titleGradient" x1="520" y1="58" x2="1080" y2="58" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#d8ff39"/>
+    <stop offset="0.5" stop-color="#9be9a0"/>
+    <stop offset="1" stop-color="#31b7ff"/>
+  </linearGradient>
+  <text x="800" y="128" fill="url(#titleGradient)" font-family="Impact, Arial Black, sans-serif" font-size="92" font-weight="900" text-anchor="middle" letter-spacing="18">SPORT MANAGER</text>
+  <text x="800" y="176" fill="#7a79b8" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" letter-spacing="9">GESTION DES INSCRIPTIONS DES ATHLETES</text>
+  <rect x="280" y="250" width="1040" height="420" rx="18" fill="#191927" stroke="#2c2e44"/>
+  <path d="M294 250H1302C1312 250 1320 258 1320 268V270H280V268C280 258 288 250 294 250Z" fill="url(#titleGradient)"/>
+  <g filter="url(#shadow)">
+    <text x="360" y="332" fill="#dfff2f" font-family="Arial Black, Arial, sans-serif" font-size="28" font-weight="900">+ AJOUTER UN ATHLETE</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#8586bb">
+    <text x="320" y="390">NOM</text>
+    <text x="568" y="390">PRENOM</text>
+    <text x="816" y="390">AGE</text>
+    <text x="1064" y="390">PAYS</text>
+    <text x="320" y="484">SEXE</text>
+    <text x="320" y="574">DISCIPLINE(S)</text>
+  </g>
+  <g fill="#10101a" stroke="#30314b" stroke-width="1.5">
+    <rect x="320" y="406" width="230" height="52" rx="8"/>
+    <rect x="568" y="406" width="230" height="52" rx="8"/>
+    <rect x="816" y="406" width="230" height="52" rx="8"/>
+    <rect x="1064" y="406" width="230" height="52" rx="8"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18" fill="#7e8293">
+    <text x="336" y="439">Ex: Benali</text>
+    <text x="584" y="439">Ex: Youssef</text>
+    <text x="832" y="439">23</text>
+    <text x="1080" y="439" fill="#ffffff" font-weight="700">MA Maroc</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18" fill="#ffffff" font-weight="700">
+    <rect x="320" y="500" width="96" height="38" rx="19" fill="#1b1b2c" stroke="#30314b"/>
+    <circle cx="340" cy="519" r="8" fill="#ffffff"/>
+    <text x="354" y="525">Homme</text>
+    <rect x="432" y="500" width="104" height="38" rx="19" fill="#1b1b2c" stroke="#30314b"/>
+    <circle cx="452" cy="519" r="8" fill="#ffffff"/>
+    <text x="466" y="525">Femme</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="17" fill="#ffffff" font-weight="700">
+    <rect x="320" y="590" width="122" height="38" rx="19" fill="#1b1b2c" stroke="#30314b"/>
+    <text x="344" y="615">Football</text>
+    <rect x="452" y="590" width="136" height="38" rx="19" fill="#1b1b2c" stroke="#30314b"/>
+    <text x="476" y="615">Basketball</text>
+    <rect x="600" y="590" width="106" height="38" rx="19" fill="#1b1b2c" stroke="#30314b"/>
+    <text x="624" y="615">Tennis</text>
+    <rect x="718" y="590" width="126" height="38" rx="19" fill="#1b1b2c" stroke="#30314b"/>
+    <text x="742" y="615">Natation</text>
+    <rect x="856" y="590" width="142" height="38" rx="19" fill="#1b1b2c" stroke="#30314b"/>
+    <text x="880" y="615">Athletisme</text>
+    <rect x="1010" y="590" width="94" height="38" rx="19" fill="#1b1b2c" stroke="#30314b"/>
+    <text x="1034" y="615">Boxe</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="18" font-weight="800">
+    <rect x="320" y="660" width="126" height="52" rx="8" fill="#dfff2f"/>
+    <text x="350" y="694" fill="#05060c">+ Ajouter</text>
+    <rect x="462" y="660" width="172" height="52" rx="8" fill="#171724" stroke="#31b7ff"/>
+    <text x="512" y="694" fill="#31b7ff">Sauvegarder</text>
+    <rect x="650" y="660" width="140" height="52" rx="8" fill="#171724" stroke="#ff4d62"/>
+    <text x="696" y="694" fill="#ff4d62">Charger</text>
+  </g>
+  <defs>
+    <filter id="shadow" x="320" y="300" width="360" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#dfff2f" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+</svg>
