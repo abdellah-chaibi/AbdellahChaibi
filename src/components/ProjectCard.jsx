@@ -38,13 +38,13 @@ function ProjectCard({ project }) {
           {project.report && (
             <a className="btn btn-secondary flex-1" href={project.report} target="_blank" rel="noreferrer">
               <FiFileText aria-hidden="true" />
-              Report
+              Rapport
             </a>
           )}
           {project.demo && (
             <a className="btn btn-primary flex-1" href={project.demo} target="_blank" rel="noreferrer">
               <FiExternalLink aria-hidden="true" />
-              Live Demo
+              Demo
             </a>
           )}
         </div>

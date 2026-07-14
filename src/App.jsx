@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fi'
 import {
   aboutItems,
+  certificateItems,
   contactItems,
   experienceItems,
   profile,
@@ -61,6 +62,16 @@ function App() {
                 <FiDownload aria-hidden="true" />
               </a>
             </div>
+            <div className="mt-10 grid max-w-xl grid-cols-3 gap-3">
+              {profile.highlights.map((item) => (
+                <div className="rounded-lg border border-slate-200 bg-white/80 p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900/80" key={item.label}>
+                  <p className="text-2xl font-bold text-slate-950 dark:text-white">{item.value}</p>
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500 dark:text-slate-400">
+                    {item.label}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="relative mx-auto aspect-square w-full max-w-sm motion-safe:animate-float-soft">
@@ -95,6 +106,25 @@ function App() {
           </div>
         </section>
 
+        <section id="certificates" className="section-shell">
+          <SectionHeader label="Certificates" title="Validated learning" />
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {certificateItems.map((item) => (
+              <a className="surface block overflow-hidden p-6" href={item.url} target="_blank" rel="noreferrer" key={item.title}>
+                <div className="flex min-h-36 items-center justify-center rounded-lg bg-slate-50 p-4 dark:bg-slate-950">
+                  <img className="h-28 w-28 object-contain" src={item.image} alt={`${item.title} badge`} />
+                </div>
+                <div className="mt-5 flex items-start gap-3">
+                  <item.icon className="mt-1 h-5 w-5 shrink-0 text-rose-600 dark:text-rose-300" aria-hidden="true" />
+                  <h3 className="text-lg font-semibold text-slate-950 dark:text-white">{item.title}</h3>
+                </div>
+                <p className="mt-2 text-sm font-semibold text-teal-700 dark:text-teal-300">{item.issuer}</p>
+                <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">{item.text}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+
         <section id="projects" className="section-shell">
           <SectionHeader label="Projects" title="Selected projects" />
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -105,7 +135,7 @@ function App() {
         </section>
 
         <section id="experience" className="section-shell">
-          <SectionHeader label="Experience" title="Academic and project timeline" />
+          <SectionHeader label="Journey" title="Education and projects" />
           <div className="mx-auto max-w-3xl">
             {experienceItems.map((item, index) => (
               <TimelineItem item={item} isLast={index === experienceItems.length - 1} key={item.title} />

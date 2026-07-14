@@ -1,0 +1,42 @@
+<svg width="960" height="540" viewBox="0 0 960 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="540" fill="#020617"/>
+  <rect x="1.5" y="1.5" width="957" height="537" rx="22" stroke="#334155" stroke-width="3"/>
+  <circle cx="145" cy="96" r="58" fill="#0F766E" fill-opacity=".34"/>
+  <circle cx="826" cy="430" r="78" fill="#E11D48" fill-opacity=".24"/>
+  <g filter="url(#shadow)">
+    <rect x="282" y="58" width="396" height="430" rx="30" fill="#050505" stroke="#CBD5E1" stroke-width="6"/>
+    <rect x="308" y="82" width="344" height="72" rx="18" fill="#F8FAFC"/>
+    <text x="632" y="128" fill="#64748B" font-family="Arial, sans-serif" font-size="30" text-anchor="end">0</text>
+    <rect x="307" y="188" width="74" height="64" rx="9" fill="#F59E0B"/>
+    <rect x="414" y="188" width="74" height="64" rx="9" fill="#F59E0B"/>
+    <rect x="521" y="188" width="74" height="64" rx="9" fill="#F59E0B"/>
+    <rect x="628" y="188" width="74" height="64" rx="9" fill="#F59E0B"/>
+    <rect x="307" y="280" width="74" height="64" rx="9" fill="#D1D5DB"/>
+    <rect x="414" y="280" width="74" height="64" rx="9" fill="#D1D5DB"/>
+    <rect x="521" y="280" width="74" height="64" rx="9" fill="#D1D5DB"/>
+    <rect x="628" y="280" width="74" height="64" rx="9" fill="#F59E0B"/>
+    <rect x="307" y="372" width="74" height="64" rx="9" fill="#D1D5DB"/>
+    <rect x="414" y="372" width="74" height="64" rx="9" fill="#D1D5DB"/>
+    <rect x="521" y="372" width="74" height="64" rx="9" fill="#D1D5DB"/>
+    <rect x="628" y="372" width="74" height="64" rx="9" fill="#F59E0B"/>
+    <text x="344" y="229" fill="#020617" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">C</text>
+    <text x="451" y="229" fill="#020617" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">x</text>
+    <text x="558" y="229" fill="#020617" font-family="Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">%</text>
+    <text x="665" y="229" fill="#020617" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">+</text>
+    <text x="344" y="321" fill="#020617" font-family="Arial, sans-serif" font-size="26" text-anchor="middle">1</text>
+    <text x="451" y="321" fill="#020617" font-family="Arial, sans-serif" font-size="26" text-anchor="middle">2</text>
+    <text x="558" y="321" fill="#020617" font-family="Arial, sans-serif" font-size="26" text-anchor="middle">3</text>
+    <text x="665" y="321" fill="#020617" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">-</text>
+    <text x="344" y="413" fill="#020617" font-family="Arial, sans-serif" font-size="26" text-anchor="middle">4</text>
+    <text x="451" y="413" fill="#020617" font-family="Arial, sans-serif" font-size="26" text-anchor="middle">5</text>
+    <text x="558" y="413" fill="#020617" font-family="Arial, sans-serif" font-size="26" text-anchor="middle">6</text>
+    <text x="665" y="413" fill="#020617" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">=</text>
+  </g>
+  <rect x="383" y="22" width="194" height="42" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="480" y="49" fill="#020617" font-family="Arial, sans-serif" font-size="19" font-weight="700" text-anchor="middle">Mode Claire</text>
+  <defs>
+    <filter id="shadow" x="257" y="38" width="470" height="484" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="12" dy="14" stdDeviation="10" flood-color="#E2E8F0" flood-opacity=".72"/>
+    </filter>
+  </defs>
+</svg>

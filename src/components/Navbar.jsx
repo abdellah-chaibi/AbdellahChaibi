@@ -27,7 +27,7 @@ function Navbar({ theme, onToggleTheme }) {
             className="icon-button"
             type="button"
             onClick={onToggleTheme}
-            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            aria-label={theme === 'dark' ? 'Passer au mode clair' : 'Passer au mode sombre'}
           >
             {theme === 'dark' ? <FiSun aria-hidden="true" /> : <FiMoon aria-hidden="true" />}
           </button>
@@ -35,7 +35,7 @@ function Navbar({ theme, onToggleTheme }) {
             className="icon-button md:hidden"
             type="button"
             onClick={() => setIsOpen((value) => !value)}
-            aria-label="Toggle navigation"
+            aria-label="Ouvrir ou fermer la navigation"
             aria-expanded={isOpen}
           >
             {isOpen ? <FiX aria-hidden="true" /> : <FiMenu aria-hidden="true" />}
