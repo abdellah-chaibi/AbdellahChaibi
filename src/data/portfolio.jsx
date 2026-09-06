@@ -19,7 +19,7 @@ export const profile = {
   image: publicAsset('images/profile-photo.jpeg'),
   intro:
     'Specialized technician in Digital Development, Web Full Stack option. I build complete web applications with React, Laravel, Node.js, Express, MySQL and MongoDB, from UML/Merise analysis to the user interface.',
-  cv: publicAsset('cv-chaibi-abdellah.pdf'),
+  cv: publicAsset('images/cv-chaibi-abdellah.pdf'),
   highlights: [
     { value: '15+', label: 'Skills' },
     { value: '4', label: 'Certificates' },
@@ -183,7 +183,7 @@ export const experienceItems = [
 ]
 
 export const contactItems = {
-  email: 'abdoochaib145@gmail.com',
+  email: 'ChaibiAbdellah26@gmail.com',
   phone: '0655322660',
   github: 'github.com/abdellah-chaibi',
 }
