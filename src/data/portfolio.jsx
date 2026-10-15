@@ -118,6 +118,14 @@ export const certificateItems = [
     url: 'https://www.credly.com/badges/7ec05e1b-43dc-4c03-960d-a569a85d9171/public_url',
     text: 'Variables, functions, arrays, objects, the DOM and first interactive behaviors.',
   },
+  {
+    icon: FiAward,
+    title: 'JavaScript Essentials 2',
+    issuer: 'Cisco Networking Academy',
+    image: publicAsset('images/javascript-essentials-2.png'),
+    url: 'https://www.credly.com/badges/8880824f-95f5-43b1-85be-6932e30f25d2/public_url',
+    text: 'Advanced concepts, asynchronous programming, closures, ES6+ features, and API integration.',
+  },
 ]
 
 export const projects = [
