@@ -18,7 +18,7 @@ export const profile = {
   headline: 'Personal Portfolio',
   image: publicAsset('images/profile-photo.jpeg'),
   intro:
-    'Specialized technician in Digital Development, Web Full Stack option. I build complete web applications with React, Laravel, Node.js, Express, MySQL and MongoDB, from UML/Merise analysis to the user interface.',
+    "Étudiant en Licence Professionnelle Développement Logiciel à l'Université Mundiapolis.Issu d'un parcours de Technicien Spécialisé en Développement Digital, je développe mes compétences en ingénierie logicielle globale : développement Web & Mobile, architecture logicielle, intégration de l'IA et pratiques DevOps.   Je conçois des solutions informatiques complètes, évolutives et performantes, de la phase d'analyse jusqu'au déploiement.",
   cv: publicAsset('images/cv-chaibi-abdellah.pdf'),
   highlights: [
     { value: '15+', label: 'Skills' },
@@ -54,12 +54,15 @@ export const skillGroups = [
       { name: 'Bootstrap', level: 88 },
       { name: 'JavaScript', level: 84 },
       { name: 'React', level: 80 },
+      { name: 'dart', level: 80 },
+      { name: 'flutter', level: 80 },
     ],
   },
   {
     title: 'Back-end Development',
     skills: [
       { name: 'PHP', level: 84 },
+      { name: 'java', level: 85 },
       { name: 'Laravel', level: 82 },
       { name: 'Node.js', level: 78 },
       { name: 'Express.js', level: 74 },
