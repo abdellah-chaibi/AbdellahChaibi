@@ -44,7 +44,7 @@ function ProjectCard({ project }) {
           {project.demo && (
             <a className="btn btn-primary flex-1" href={project.demo} target="_blank" rel="noreferrer">
               <FiExternalLink aria-hidden="true" />
-              Demo
+              Démo
             </a>
           )}
         </div>

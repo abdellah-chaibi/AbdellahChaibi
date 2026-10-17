@@ -3,51 +3,51 @@ import { FiAward, FiBookOpen, FiBriefcase, FiCompass } from 'react-icons/fi'
 const publicAsset = (path) => `${import.meta.env.BASE_URL}${path}`
 
 export const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Certificates', href: '#certificates' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Journey', href: '#experience' },
+  { label: 'Accueil', href: '#home' },
+  { label: 'À propos', href: '#about' },
+  { label: 'Compétences', href: '#skills' },
+  { label: 'Certifications', href: '#certificates' },
+  { label: 'Projets', href: '#projects' },
+  { label: 'Parcours', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ]
 
 export const profile = {
   name: 'Abdellah Chaibi',
-  role: 'Full Stack Web Developer',
-  headline: 'Personal Portfolio',
+  role: 'Développeur web full stack',
+  headline: 'Portfolio personnel',
   image: publicAsset('images/profile-photo.jpeg'),
   intro:
-    "Étudiant en Licence Professionnelle Développement Logiciel à l'Université Mundiapolis.Issu d'un parcours de Technicien Spécialisé en Développement Digital, je développe mes compétences en ingénierie logicielle globale : développement Web & Mobile, architecture logicielle, intégration de l'IA et pratiques DevOps.   Je conçois des solutions informatiques complètes, évolutives et performantes, de la phase d'analyse jusqu'au déploiement.",
+    "Etudiant en licence professionnelle Developpement logiciel a l'Universite Mundiapolis. Issu d'un parcours de technicien specialise en developpement digital, je developpe mes competences en ingenierie logicielle : developpement web et mobile, architecture logicielle, integration de l'intelligence artificielle et pratiques DevOps. Je concois des solutions completes, evolutives et performantes, de l'analyse jusqu'au deploiement.",
   cv: publicAsset('images/cv-chaibi-abdellah.pdf'),
   highlights: [
-    { value: '15+', label: 'Skills' },
-    { value: '4', label: 'Certificates' },
-    { value: '4', label: 'Projects' },
+    { value: '20+', label: 'Compétences' },
+    { value: '5', label: 'Certifications' },
+    { value: '4', label: 'Projets' },
   ],
 }
 
 export const aboutItems = [
   {
     icon: FiBookOpen,
-    title: 'Biography',
-    text: 'Full stack web developer based in Kasba Tadla, passionate about creating useful, clean and easy-to-use applications. I combine React, Laravel and MySQL to build practical projects.',
+    title: 'Biographie',
+    text: 'Développeur web full stack basé à Kasba Tadla, je suis passionné par la création d’applications utiles, claires et faciles à utiliser. Je combine React, Laravel et MySQL pour réaliser des projets concrets.',
   },
   {
     icon: FiBriefcase,
-    title: 'Education',
-    text: 'Specialized Technician in Digital Development - Web Full Stack option, ISTA Kasba Tadla (2025 - 2026). First year at ISTA Khenifra (2024 - 2025). Baccalaureate in Physical Sciences, Moulay Rachid High School - Kasba Tadla (2023 - 2024).',
+    title: 'Formation',
+    text: 'Technicien spécialisé en développement digital, option développement web full stack, ISTA de Kasba Tadla (2025–2026). Première année à l’ISTA de Khénifra (2024–2025). Baccalauréat en sciences physiques, lycée Moulay Rachid, Kasba Tadla (2023–2024).',
   },
   {
     icon: FiCompass,
-    title: 'Career Objective',
-    text: 'To keep growing as a junior full stack developer in a modern team, working on high-performance, secure and well-structured web applications.',
+    title: 'Objectif professionnel',
+    text: 'Continuer à progresser comme développeur full stack junior au sein d’une équipe moderne et contribuer à des applications web performantes, sécurisées et bien structurées.',
   },
 ]
 
 export const skillGroups = [
   {
-    title: 'Front-end Development',
+    title: 'Développement front-end',
     skills: [
       { name: 'HTML', level: 95 },
       { name: 'CSS', level: 90 },
@@ -59,7 +59,7 @@ export const skillGroups = [
     ],
   },
   {
-    title: 'Back-end Development',
+    title: 'Développement back-end',
     skills: [
       { name: 'PHP', level: 84 },
       { name: 'java', level: 85 },
@@ -70,7 +70,7 @@ export const skillGroups = [
     ],
   },
   {
-    title: 'Databases',
+    title: 'Bases de données',
     skills: [
       { name: 'MySQL', level: 86 },
       { name: 'MySQL Procedural', level: 80 },
@@ -78,7 +78,7 @@ export const skillGroups = [
     ],
   },
   {
-    title: 'Modeling and Methods',
+    title: 'Modélisation et méthodes',
     skills: [
       { name: 'UML', level: 78 },
       { name: 'Merise', level: 80 },
@@ -95,7 +95,7 @@ export const certificateItems = [
     issuer: 'Cisco Networking Academy',
     image: publicAsset('images/certificate-python.png'),
     url: 'https://www.credly.com/badges/822cdcc0-6095-4721-93b6-fc81a2c4612d/public_url',
-    text: 'Python basics, syntax, conditions, loops, functions and programming logic.',
+    text: 'Bases de Python : syntaxe, conditions, boucles, fonctions et logique de programmation.',
   },
   {
     icon: FiAward,
@@ -103,7 +103,7 @@ export const certificateItems = [
     issuer: 'Cisco Networking Academy',
     image: publicAsset('images/certificate-html.png'),
     url: 'https://www.credly.com/badges/b43dfb6a-0a9a-428b-a8cd-dbe88a709515/public_url',
-    text: 'Semantic structure, forms, media, links and HTML best practices.',
+    text: 'Structure sémantique, formulaires, médias, liens et bonnes pratiques HTML.',
   },
   {
     icon: FiAward,
@@ -111,7 +111,7 @@ export const certificateItems = [
     issuer: 'Cisco Networking Academy',
     image: publicAsset('images/certificate-css.png'),
     url: 'https://www.credly.com/badges/bfc14baa-60ee-4ba7-835c-404d5396b706/public_url',
-    text: 'Selectors, box model, responsive design, modern layouts and reusable styles.',
+    text: 'Sélecteurs, modèle de boîte, conception adaptative, mises en page modernes et styles réutilisables.',
   },
   {
     icon: FiAward,
@@ -119,7 +119,7 @@ export const certificateItems = [
     issuer: 'Cisco Networking Academy',
     image: publicAsset('images/certificate-javascript.png'),
     url: 'https://www.credly.com/badges/7ec05e1b-43dc-4c03-960d-a569a85d9171/public_url',
-    text: 'Variables, functions, arrays, objects, the DOM and first interactive behaviors.',
+    text: 'Variables, fonctions, tableaux, objets, DOM et premiers comportements interactifs.',
   },
   {
     icon: FiAward,
@@ -127,41 +127,41 @@ export const certificateItems = [
     issuer: 'Cisco Networking Academy',
     image: publicAsset('images/javascript-essentials-2.png'),
     url: 'https://www.credly.com/badges/8880824f-95f5-43b1-85be-6932e30f25d2/public_url',
-    text: 'Advanced concepts, asynchronous programming, closures, ES6+ features, and API integration.',
+    text: 'Concepts avancés, programmation asynchrone, fermetures, fonctionnalités ES6+ et intégration d’API.',
   },
 ]
 
 export const projects = [
   {
-    title: 'RPFVS - Complaint Management',
+    title: 'RPFVS – Gestion des réclamations',
     description:
-      'Internship project to digitize citizen complaint processing for the Urban Commune of Kasba Tadla, with a multi-role validation workflow, GPS geolocation, evidence uploads and real-time status tracking.',
+      'Projet de stage visant à numériser le traitement des réclamations citoyennes pour la commune urbaine de Kasba Tadla : validation selon plusieurs rôles, géolocalisation GPS, ajout de pièces justificatives et suivi du statut en temps réel.',
     technologies: ['React 18', 'Vite', 'Laravel 12', 'MySQL', 'Laravel Sanctum', 'Geolocation API'],
     image: publicAsset('images/project-reclamation.png'),
     github: 'https://github.com/abdellah-chaibi/reclamation',
     report: publicAsset('rpfvs-stage-cover.pdf'),
   },
   {
-    title: 'TADLABRICOL - Web Platform',
+    title: 'TADLABRICOL – Plateforme web',
     description:
-      'Final year project: a trilingual web platform connecting citizens with local craftspeople in the Tadla region, with Client, Craftsman and Admin roles, internal messaging, search filters, reviews and favorites.',
+      'Projet de fin d’études : plateforme web trilingue qui met en relation les habitants et les artisans de la région de Tadla. Elle propose des espaces dédiés aux clients, artisans et administrateurs, ainsi que la messagerie, des filtres de recherche, des avis et des favoris.',
     technologies: ['React 19', 'Vite', 'Laravel 12', 'MySQL', 'Laravel Sanctum', 'Tailwind CSS'],
     image: publicAsset('images/project-tadlabricol.png'),
     github: 'https://github.com/abdellah-chaibi/tadlabricol',
     report: publicAsset('tadla-bricole-pfe-cover.pdf'),
   },
   {
-    title: 'Sport Manager - F-CRUD',
+    title: 'Gestion sportive – F-CRUD',
     description:
-      'Front-end CRUD application for managing athlete registrations, with an add form, discipline selection, data saving and data loading.',
+      'Application front-end de gestion des inscriptions d’athlètes, avec formulaire d’ajout, choix de discipline, enregistrement et chargement des données.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'CRUD', 'LocalStorage'],
     image: publicAsset('images/project-fcrud.svg'),
     github: 'https://github.com/abdellah-chaibi/F-CRUD',
   },
   {
-    title: 'Calculator - Light/Dark Mode',
+    title: 'Calculatrice – Mode clair/sombre',
     description:
-      'Interactive calculator application with basic operations, a responsive interface, clear buttons and a light/dark mode switch.',
+      'Calculatrice interactive proposant les opérations de base, une interface adaptative, un bouton d’effacement et un thème clair ou sombre.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive UI'],
     image: publicAsset('images/project-calculette.svg'),
     github: 'https://github.com/abdellah-chaibi/calculette',
@@ -171,25 +171,25 @@ export const projects = [
 
 export const experienceItems = [
   {
-    period: 'March 2026',
-    title: 'Internship Project - Complaint Management Application',
-    company: 'Kasba Tadla Commune',
+    period: 'Mars 2026',
+    title: 'Stage – Application de gestion des réclamations',
+    company: 'Commune de Kasba Tadla',
     description:
-      'Digitization of the citizen complaint handling process with a full stack web application based on React, Laravel, MySQL, Sanctum and the Geolocation API.',
+      'Numérisation du traitement des réclamations citoyennes avec une application web full stack développée avec React, Laravel, MySQL, Sanctum et l’API de géolocalisation.',
   },
   {
     period: '2026',
-    title: 'Final Year Project - TADLABRICOL',
+    title: 'Projet de fin d’études – TADLABRICOL',
     company: 'ISTA Kasba Tadla',
     description:
-      'Design and development of a trilingual web platform that connects citizens and local craftspeople, with secure authentication, roles, messaging, multi-criteria search and a review system.',
+      'Conception et développement d’une plateforme web trilingue mettant en relation les habitants et les artisans locaux, avec authentification sécurisée, gestion des rôles, messagerie, recherche multicritère et système d’avis.',
   },
   {
-    period: '2025 - 2026',
-    title: 'Digital Development - Web Full Stack Option',
-    company: 'ISTA Kasba Tadla',
+    period: '2025–2026',
+    title: 'Développement digital – Option web full stack',
+    company: 'ISTA de Kasba Tadla',
     description:
-      'Specialized training focused on designing, developing and deploying full stack web applications.',
+      'Formation spécialisée en conception, développement et déploiement d’applications web full stack.',
   },
 ]
 

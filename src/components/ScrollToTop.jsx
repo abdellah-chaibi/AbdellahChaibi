@@ -19,7 +19,7 @@ function ScrollToTop() {
         isVisible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'
       }`}
       type="button"
-      aria-label="Scroll to top"
+      aria-label="Remonter en haut de page"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
     >
       <FiArrowUp aria-hidden="true" />

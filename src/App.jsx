@@ -54,11 +54,11 @@ function App() {
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a className="btn btn-primary" href="#projects">
-                View Projects
+                Voir les projets
                 <FiArrowRight aria-hidden="true" />
               </a>
               <a className="btn btn-secondary" href={profile.cv} download>
-                Download CV
+                Télécharger mon CV
                 <FiDownload aria-hidden="true" />
               </a>
             </div>
@@ -85,7 +85,7 @@ function App() {
         </section>
 
         <section id="about" className="section-shell">
-          <SectionHeader label="About" title="Profile overview" />
+          <SectionHeader label="À propos" title="Présentation" />
           <div className="grid gap-5 md:grid-cols-3">
             {aboutItems.map((item) => (
               <article className="surface p-6" key={item.title}>
@@ -98,7 +98,7 @@ function App() {
         </section>
 
         <section id="skills" className="section-shell">
-          <SectionHeader label="Skills" title="Technical stack" />
+          <SectionHeader label="Compétences" title="Compétences techniques" />
           <div className="grid gap-5 lg:grid-cols-2">
             {skillGroups.map((group) => (
               <SkillGroup group={group} key={group.title} />
@@ -107,7 +107,7 @@ function App() {
         </section>
 
         <section id="certificates" className="section-shell">
-          <SectionHeader label="Certificates" title="Validated learning" />
+          <SectionHeader label="Certifications" title="Formations certifiées" />
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
             {certificateItems.map((item) => (
               <a className="surface block overflow-hidden p-6" href={item.url} target="_blank" rel="noreferrer" key={item.title}>
@@ -126,7 +126,7 @@ function App() {
         </section>
 
         <section id="projects" className="section-shell">
-          <SectionHeader label="Projects" title="Selected projects" />
+          <SectionHeader label="Projets" title="Quelques réalisations" />
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {projects.map((project) => (
               <ProjectCard project={project} key={project.title} />
@@ -135,7 +135,7 @@ function App() {
         </section>
 
         <section id="experience" className="section-shell">
-          <SectionHeader label="Journey" title="Education and projects" />
+          <SectionHeader label="Parcours" title="Formation et projets" />
           <div className="mx-auto max-w-3xl">
             {experienceItems.map((item, index) => (
               <TimelineItem item={item} isLast={index === experienceItems.length - 1} key={item.title} />
@@ -144,15 +144,15 @@ function App() {
         </section>
 
         <section id="contact" className="section-shell pb-20">
-          <SectionHeader label="Contact" title="Get in touch" />
+          <SectionHeader label="Contact" title="Me contacter" />
           <div className="grid gap-5 md:grid-cols-3">
             <ContactLink icon={FiMail} label="Email" value={contactItems.email} href={`mailto:${contactItems.email}`} />
-            <ContactLink icon={FiPhone} label="Phone" value={contactItems.phone} href={`tel:${contactItems.phone}`} />
+            <ContactLink icon={FiPhone} label="Téléphone" value={contactItems.phone} href={`tel:${contactItems.phone}`} />
             <ContactLink icon={FiGithub} label="GitHub" value={contactItems.github} href="https://github.com/abdellah-chaibi" />
           </div>
           <div className="mt-6 flex items-center gap-3 rounded-lg border border-slate-200 bg-white p-5 text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
             <FiMapPin className="h-5 w-5 shrink-0 text-teal-600 dark:text-teal-300" aria-hidden="true" />
-            <p>Kasba Tadla, Morocco. Available from July 2026.</p>
+            <p>Kasba Tadla, Maroc. Disponible à partir de juillet 2026.</p>
           </div>
         </section>
       </main>
