@@ -8,7 +8,8 @@ export const navItems = [
   { label: 'Compétences', href: '#skills' },
   { label: 'Certifications', href: '#certificates' },
   { label: 'Projets', href: '#projects' },
-  { label: 'Parcours', href: '#experience' },
+  { label: 'Formation', href: '#education' },
+  { label: 'Expériences', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -31,17 +32,30 @@ export const aboutItems = [
   {
     icon: FiBookOpen,
     title: 'Biographie',
-    text: 'Développeur web full stack basé à Kasba Tadla, je suis passionné par la création d’applications utiles, claires et faciles à utiliser. Je combine React, Laravel et MySQL pour réaliser des projets concrets.',
+    text: 'Étudiant en licence professionnelle Développement logiciel à l’Université Mundiapolis Casablanca, je poursuis mon parcours après une formation de technicien spécialisé en développement digital. Basé à Casablanca, je m’intéresse au développement web et mobile, à l’architecture logicielle et à la création d’applications utiles.',
   },
   {
     icon: FiBriefcase,
     title: 'Formation',
-    text: 'Technicien spécialisé en développement digital, option développement web full stack, ISTA de Kasba Tadla (2025–2026). Première année à l’ISTA de Khénifra (2024–2025). Baccalauréat en sciences physiques, lycée Moulay Rachid, Kasba Tadla (2023–2024).',
+    formations: [
+      {
+        name: 'Université Mundiapolis Casablanca',
+        detail: 'Licence professionnelle en Développement logiciel · 2026–2027 · Bac+3',
+      },
+      {
+        name: 'Institut Spécialisé de Technologie Appliquée NTIC',
+        detail: 'Technicien spécialisé en Développement digital, option Web Full Stack · octobre 2024–juillet 2026',
+      },
+      {
+        name: 'Lycée Moulay Rachid, Kasba Tadla',
+        detail: 'Baccalauréat en sciences physiques · 2023–2024',
+      },
+    ],
   },
   {
     icon: FiCompass,
     title: 'Objectif professionnel',
-    text: 'Continuer à progresser comme développeur full stack junior au sein d’une équipe moderne et contribuer à des applications web performantes, sécurisées et bien structurées.',
+    text: 'Approfondir mes compétences en développement logiciel et réussir mon stage de fin d’études, puis rejoindre une équipe où je pourrai concevoir et développer des applications web et mobiles performantes, sécurisées et bien structurées.',
   },
 ]
 
@@ -169,7 +183,24 @@ export const projects = [
   },
 ]
 
-export const experienceItems = [
+export const educationExperienceItems = [
+  {
+    period: 'Septembre 2026 – juillet 2027',
+    title: 'Licence professionnelle – Développement logiciel',
+    company: 'Université Mundiapolis Casablanca',
+    description:
+      'Poursuite de mes études en licence professionnelle (Bac+3). Modules : communication V, architecture MVC, systèmes d’information, développement web avancé, processus de développement logiciel et développement mobile. Au semestre 6 : DevOps, gouvernance IT et sécurité de l’information, sécurité applicative, assurance qualité logiciel et stage de fin d’études.',
+  },
+  {
+    period: 'Octobre 2024 – juillet 2026',
+    title: 'Développement digital – Option web full stack',
+    company: 'Institut Spécialisé de Technologie Appliquée NTIC',
+    description:
+      'Formation spécialisée en conception, développement et déploiement d’applications web full stack.',
+  },
+]
+
+export const projectExperienceItems = [
   {
     period: 'Mars 2026',
     title: 'Stage – Application de gestion des réclamations',
@@ -183,13 +214,6 @@ export const experienceItems = [
     company: 'ISTA Kasba Tadla',
     description:
       'Conception et développement d’une plateforme web trilingue mettant en relation les habitants et les artisans locaux, avec authentification sécurisée, gestion des rôles, messagerie, recherche multicritère et système d’avis.',
-  },
-  {
-    period: '2025–2026',
-    title: 'Développement digital – Option web full stack',
-    company: 'ISTA de Kasba Tadla',
-    description:
-      'Formation spécialisée en conception, développement et déploiement d’applications web full stack.',
   },
 ]
 

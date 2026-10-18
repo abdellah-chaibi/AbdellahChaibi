@@ -11,7 +11,8 @@ import {
   aboutItems,
   certificateItems,
   contactItems,
-  experienceItems,
+  educationExperienceItems,
+  projectExperienceItems,
   profile,
   projects,
   skillGroups,
@@ -91,7 +92,25 @@ function App() {
               <article className="surface p-6" key={item.title}>
                 <item.icon className="h-6 w-6 text-teal-600 dark:text-teal-300" aria-hidden="true" />
                 <h3 className="mt-5 text-xl font-semibold text-slate-950 dark:text-white">{item.title}</h3>
-                <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">{item.text}</p>
+                {item.formations ? (
+                  <ul className="mt-3 space-y-3">
+                    {item.formations.map((formation, index) => (
+                      <li
+                        className={`flex gap-3 leading-6 text-slate-600 dark:text-slate-300 ${index > 0 ? 'border-t border-dashed border-slate-200 pt-3 dark:border-slate-700' : ''}`}
+                        key={formation.name}
+                      >
+                        <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-teal-600 dark:bg-teal-300" aria-hidden="true" />
+                        <span>
+                          <span className="font-semibold text-slate-800 dark:text-slate-100">{formation.name}</span>
+                          <br />
+                          {formation.detail}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="mt-3 leading-7 text-slate-600 dark:text-slate-300">{item.text}</p>
+                )}
               </article>
             ))}
           </div>
@@ -134,11 +153,20 @@ function App() {
           </div>
         </section>
 
-        <section id="experience" className="section-shell">
-          <SectionHeader label="Parcours" title="Formation et projets" />
+        <section id="education" className="section-shell">
+          <SectionHeader label="Formation" title="Parcours de formation" />
           <div className="mx-auto max-w-3xl">
-            {experienceItems.map((item, index) => (
-              <TimelineItem item={item} isLast={index === experienceItems.length - 1} key={item.title} />
+            {educationExperienceItems.map((item, index) => (
+              <TimelineItem item={item} isLast={index === educationExperienceItems.length - 1} key={item.title} />
+            ))}
+          </div>
+        </section>
+
+        <section id="experience" className="section-shell">
+          <SectionHeader label="Expériences" title="Stages et projets réalisés" />
+          <div className="mx-auto max-w-3xl">
+            {projectExperienceItems.map((item, index) => (
+              <TimelineItem item={item} isLast={index === projectExperienceItems.length - 1} key={item.title} />
             ))}
           </div>
         </section>
@@ -152,7 +180,7 @@ function App() {
           </div>
           <div className="mt-6 flex items-center gap-3 rounded-lg border border-slate-200 bg-white p-5 text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
             <FiMapPin className="h-5 w-5 shrink-0 text-teal-600 dark:text-teal-300" aria-hidden="true" />
-            <p>Kasba Tadla, Maroc. Disponible à partir de juillet 2026.</p>
+            <p>Casablanca, Maroc. Disponible à partir de juillet 2026.</p>
           </div>
         </section>
       </main>
